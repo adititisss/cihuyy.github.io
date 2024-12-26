@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Tugas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Pencarian Tugas 🎉</h1>
+            <p>Selamat datang! Ini adalah riwayat tugasmu yang menyenangkan 😊</p>
+        </header>
+
+        <main>
+            <section id="taskListContainer">
+                <h2>📋 Daftar Tugas</h2>
+                <div id="taskList" class="content-box">
+                    <p>Sedang memuat tugas...</p>
+                </div>
+                <p id="totalTasks" class="task-summary">Total tugas: 0</p>
+            </section>
+
+            <section class="search-container">
+                <h2>🔍 Cari Tugas</h2>
+                <label for="searchCourseName">Nama Mata Kuliah:</label>
+                <input type="text" id="searchCourseName" placeholder="Contoh: Matematika">
+
+                <label for="searchRange">Range Pencarian:</label>
+                <select id="searchRange">
+                    <option value="100">1 - 100</option>
+                    <option value="1000">1 - 1000</option>
+                    <option value="5000">1 - 5000</option>
+                    <option value="10000">1 - 10000</option>
+                </select>
+
+                <label for="searchMethod">Metode Pencarian:</label>
+                <select id="searchMethod">
+                    <option value="iterative">Iteratif</option>
+                    <option value="recursive">Rekursif</option>
+                </select>
+
+                <button onclick="searchTasks()">Cari Sekarang</button>
+            </section>
+
+            <section id="searchResultsContainer">
+                <h2>✨ Hasil Pencarian</h2>
+                <div id="searchResults" class="content-box">
+                    <p>Hasil pencarian akan muncul di sini.</p>
+                </div>
+                <p id="searchStats" class="task-summary">Hasil pencarian: 0 mata kuliah ditemukan dalam 0 ms</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>🎨 Dibuat dengan penuh kreativitas dan keceriaan 🌈</p>
+    </footer>y
+
+    <script src="script.js"></script>
+</body>
+</html>
